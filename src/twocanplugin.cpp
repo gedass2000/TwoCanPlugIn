@@ -45,7 +45,7 @@ extern "C" DECL_EXP void destroy_pi(opencpn_plugin* p) {
 
 // TwoCan plugin constructor. Note it inherits from wxEvtHandler so that we can receive events
 // from the NMEA 2000 device when a NMEA 2000 frame is received
-TwoCan::TwoCan(void *ppimgr) : opencpn_plugin_18(ppimgr), wxEvtHandler() {
+TwoCan::TwoCan(void *ppimgr) : opencpn_plugin_116(ppimgr), wxEvtHandler() {
 	// Wire up the event handler
 	Connect(wxEVT_SENTENCE_RECEIVED_EVENT, wxCommandEventHandler(TwoCan::OnSentenceReceived));
 

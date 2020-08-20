@@ -29,7 +29,7 @@
 
 // What version of the OpenCPN plugin API does this plugin support
 #define     OPENCPN_API_VERSION_MAJOR    1
-#define     OPENCPN_API_VERSION_MINOR    8
+#define     OPENCPN_API_VERSION_MINOR    16
 
 // Defines all of the OpenCPN plugin virtual methods we need to override
 #include "ocpn_plugin.h"
@@ -83,7 +83,7 @@ int networkAddress;
 NetworkInformation networkMap[CONST_MAX_DEVICES];
 
 // The TwoCan plugin
-class TwoCan : public opencpn_plugin_18, public wxEvtHandler {
+class TwoCan : public opencpn_plugin_116, public wxEvtHandler {
 
 public:
 	// The constructor
